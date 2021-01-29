@@ -7,7 +7,7 @@ const token = process.env.BOT_TOKEN;
 let loaders = util.promisify(fs.readdir)('./load').then((files) => files.map((n) => require(`./load/${n}`)), () => []);
 let client = new Client({ disableEveryone: true });
 
-client.ownerID = '210814737468882945';
+client.ownerID = '432650511825633317';
 
 client.on('ready', async () => {
 	loaders = await loaders;
