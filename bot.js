@@ -19,7 +19,7 @@ client.on('ready', async () => {
 	console.log(client.user.username + ' has successfully booted up.');
 });
 
-handler(__dirname + '/commands', client, { customPrefix: '!' });
+handler(__dirname + '/commands', client, { customPrefix: '\' });
 handler.promptOptionsDefaults.correct = 'Invalid input. Please retry.';
 
 client.login(token);
